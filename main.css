@@ -1,0 +1,19 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.heavy {
+  font-weight: 900;
+}
+.light {
+  font-weight: 100;
+}
+
+.title {
+  font-size: max(3vw, 2em);
+  text-align: center;
+}
+.navbar {
+  text-align: center;
+}

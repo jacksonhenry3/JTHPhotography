@@ -1,2 +1,0 @@
-# JTHPhotography
-Created with CodeSandbox

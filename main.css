@@ -21,134 +21,6 @@ body {
   font-size: max(1.75vw, 1.5em);
 }
 
-/* .pagelink:hover {
-  background: #222;
-  color: #eee;
-} */
-
-/* Button 1 */
-.btn-1 {
-  border: 3px solid #fff;
-  color: #fff;
-  transition: all.3s;
-}
-
-/* Button 1d */
-.btn-1d {
-  overflow: hidden;
-}
-
-.btn-1d:after {
-  width: 0;
-  height: 103%;
-  top: 50%;
-  left: 50%;
-  background: #222;
-  opacity: 0;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.btn-1d:hover,
-.btn-1d:active {
-  color: #eee;
-}
-
-.btn-1d:hover:after {
-  width: 90%;
-  opacity: 1;
-}
-
-.btn-1d:active:after {
-  width: 101%;
-  opacity: 1;
-}
-
-/* General button style (reset) */
-.btn {
-  padding: 1vw;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  margin-left: -3vw;
-  margin-right: -3vw;
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  cursor: pointer;
-  display: inline-block;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.btn:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.card-img-top {
-  padding: 10px;
-  border: 00px solid #222;
-  transition: all 0.5s;
-  opacity: 1;
-  padding: 0px;
-}
-.card:hover .card-img-top {
-  opacity: 0.75;
-}
-
-.card {
-  cursor: pointer;
-  background: #eee;
-  border: none;
-}
-
-.card-body {
-  margin: 0;
-  opacity: 1;
-  transition: all 0.1s;
-}
-
-/* Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  .card-columns {
-    column-count: 2;
-  }
-}
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-  .card-columns {
-    column-count: 3;
-  }
-}
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-  .card-columns {
-    column-count: 3;
-  }
-}
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-  .card-columns {
-    column-count: 4;
-  }
-}
-.card {
-  text-align: center;
-}
 .purchase {
   opacity: 0;
   color: #000;
@@ -163,10 +35,6 @@ body {
   width: 100%;
 }
 
-.card:hover .purchase {
-  opacity: 1;
-  top: 50%;
-}
 
 .imgbox {
   display: grid;
@@ -176,4 +44,9 @@ body {
   max-width: 100%;
   max-height: 80vh;
   margin: auto;
+}
+
+.title
+{
+  cursor: pointer;
 }

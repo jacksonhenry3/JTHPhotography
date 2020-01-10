@@ -1,0 +1,72 @@
+
+/* Button 1 */
+.btn {
+  border: 3px solid #fff;
+  color: #fff;
+  transition: all.3s;
+}
+
+/* Button 1d */
+.btn {
+  overflow: hidden;
+}
+
+.btn:after {
+  width: 0;
+  height: 103%;
+  top: 50%;
+  left: 50%;
+  background: #222;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.btn:hover,
+.btn:active {
+  color: #eee;
+}
+
+.btn:hover:after {
+  width: 90%;
+  opacity: 1;
+}
+
+.btn:active:after {
+  width: 101%;
+  opacity: 1;
+}
+
+/* General button style (reset) */
+.btn {
+  padding: 1vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  margin-left: -3vw;
+  margin-right: -3vw;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+

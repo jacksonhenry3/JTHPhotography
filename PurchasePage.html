@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div class = 'container-fluid'>
+      <div class = "row navbar">
+        <div class = "col-md-auto">
+          <h1 class = 'title'>
+            <span class = 'heavy'>JTH</span><span class="light">Photography</apn>
+          </h1>
+        </div>
+        <div class = "col-md-auto pagelink" onclick="location.href='index.html';"><span class = 'btn btn-1 btn-1d'>Gallery</span> </div>
+        <div class = "col-md-auto pagelink"><span class = 'btn btn-1 btn-1d'>About</span></div>
+        <div class = "col-xl-4 col-lg-3"></div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class = "imgbox">
+              <img class = "display center-fit" src = "fly.jpg">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <table>
+              <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+                <option value="Option 1">Option 1 $10.00 USD</option>
+                <option value="Option 2">Option 2 $15.00 USD</option>
+                <option value="Option 3">Option 3 $20.00 USD</option>
+              </select> </td></tr>
+              </table>
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

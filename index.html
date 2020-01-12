@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,900&display=swap" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="card.css" />
-    <link rel="stylesheet" href="btn.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/btn.css" />
+
     <title>Static Template</title>
   </head>
   <body>
@@ -28,20 +27,15 @@
             <span class = 'heavy'>JTH</span><span class="light">Photography</apn>
           </h1>
         </div>
-        <div class = "col-md-auto pagelink" onclick="location.href='index.html';"><span class = 'btn'>Gallery</span> </div>
+        <div class = "col-md-auto pagelink" onclick="location.href='index.html';" ><span class = 'btn' style = "border-bottom: 4px solid #222;">Gallery</span> </div>
         <div class = "col-md-auto pagelink" onclick="location.href='about.html';"><span class = 'btn'>About</span></div>
         <div class = "col-xl-4 col-lg-3"></div>
       </div>
       <div class="card-columns">
 
-        <div class="card" onclick="location.href='PurchasePage.html?image=BUG.jpg';">
-          <img class="card-img-top" src="fly.jpg" alt="Card image cap">
+        <div class="card" onclick="location.href='PurchasePage.html?id=1';">
+          <img class="card-img-top" src="./images/icon/fly.jpg" alt="Card image cap">
           <div class = "purchase">Purchase</div>
-        </div>
-
-        <div class="card" onclick="location.href='PurchasePage.html?image=neother';">
-          <img class="card-img-top" src="Noether.jpg" alt="Card image cap">
-          <a class = "purchase">Purchase</div>
         </div>
 
 
@@ -49,4 +43,5 @@
         </div>
     </div>
   </body>
+  <script type="text/javascript" src = "./scripts/main.js"></script>
 </html>

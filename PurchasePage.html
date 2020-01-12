@@ -11,59 +11,58 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,900&display=swap" rel="stylesheet">
     
-
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="card.css" />
-    <link rel="stylesheet" href="btn.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/btn.css" />
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
 
-
-    <title>Static Template</title>
+  <script type="text/javascript" src="./scripts/data.json"></script>
   </head>
   <body>
-    <div class = 'container-fluid'>
+    <div class = 'container-fluid' id = "header">
       <div class = "row navbar">
         <div class = "col-md-auto">
           <h1 class = 'title' onclick="location.href='index.html';">
-            <span class = 'heavy'>JTH</span><span class="light">Photography</apn>
+            <span class = 'heavy'>JTH</span><span class="light">Photography</span>
           </h1>
         </div>
-        <div class = "col-md-auto pagelink" onclick="location.href='index.html';"><span class = 'btn '>Gallery</span> </div>
+        <div class = "col-md-auto pagelink" onclick="location.href='index.html';">
+          <span class = 'btn '>Gallery</span>
+        </div>
         <div class = "col-md-auto pagelink"><span class = 'btn'>About</span></div>
         <div class = "col-xl-4 col-lg-3"></div>
       </div>
+    </div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-auto">
             <div class = "imgbox">
               <img class = "display center-fit" id = "preview" src = "">
             </div>
           </div>
-          <div class="col-sm-4">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_xclick">
-            <input type="hidden" name="business" value="jacksonhenry3@gmail.com">
-            <input type="hidden" name="lc" value="US">
-            <input type="hidden" id = "name_of_item" name="item_name" value="">
-            <input type="hidden" name="amount" value="10.00">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="button_subtype" value="services">
-            <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHosted">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-
-
+           <div class="col-md" id ="info">
+              <div class="row">
+                <div class = "col-md-12">
+                  <h1 class = 'title'>
+                    <span class = 'light' id = "title"></span>
+                  </h1>
+                  <p id = "description"> 
+                  </p>
+                  <div id = "price_display">ERROR</div>
+                </div>
+              </div>
+            <div id = "button">
               
+            </div> 
           </div>
-        </div>
+        </div> 
       </div>
     </div>
   </body>
-  <script type="text/javascript" src = "PurchasePage.js"></script>
+  <script type="text/javascript" src = "./scripts/PurchasePage.js"></script>
+  <script type="text/javascript" src = "./scripts/generatePurchasePage.js"></script>
 </html>

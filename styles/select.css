@@ -1,0 +1,33 @@
+/*select
+{
+	border: none;
+	background: #eee;
+	outline: 0;
+}
+option
+{
+	border: none;
+	background: #eee;
+	outline: 0;
+}
+
+table
+{
+	font-size:1.6rem;
+	margin:0px auto;
+}
+
+select:active, select:hover {
+  outline: none
+  overflow: hidden;
+  background: none;
+}
+
+.bloc { display:inline-block; vertical-align:top; overflow:hidden; text-align:center;}
+.bloc select { padding:20px; margin:-5px -20px -5px -5px; }
+
+select > option:hover{
+				background: #222;
+				color:#eee;
+                transition: all .2s ease-in-out;
+            }*/
